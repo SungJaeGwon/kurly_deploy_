@@ -1,3 +1,0 @@
- MySQL Community Downloads
-
-dev.mysql.com/downloads/

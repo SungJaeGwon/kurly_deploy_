@@ -1,9 +1,0 @@
-서브페이지_컴포넌트_설계
-
-부모컴포넌트
-Sub1Component.jsx
-
-    자식컴포넌트
-    - 타이틀    Sub1ComponentChild1Title.jsx
-    - 서브메뉴  Sub1ComponentChild2Submenu.jsx
-    - 상품목록  Sub1ComponentChild3ProductList.jsx
