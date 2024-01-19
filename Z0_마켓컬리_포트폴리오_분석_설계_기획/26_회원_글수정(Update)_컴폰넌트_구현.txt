@@ -1,0 +1,31 @@
+글수정(Update) 컴폰넌트 구현
+
+http://gksmf519.dothome.co.kr/myadmin
+gksmf519
+anstjswhd0105#
+
+
+[1] 프론트앤드
+    - 글수정 컴포넌트이름 : Sub7NoticeUpdateComponent.jsx
+
+[2] 백앤드 : 수정, 삭제 할 경우 필요
+    - 수정 : green_kurly_notice_table_update.php
+    
+     http://gksmf519.dothome.co.kr/kurly_green/green_kurly_notice_table_update.php
+
+1. 구성요소
+    - 글수정(Update) 컴포넌트 타이틀
+
+2. 글수정 (Update)
+    가. 글수정 폼 컴폰넌트 UIUX 디자인 제작        
+        타입 : 공지 또는 공백 => 라디오 버튼
+        제목 :  
+        내용 : 
+        작성자: 관리자 로그인 이름
+        아이디: 관리자 로그인 아이디
+
+
+# 글수정(Update) 폼 에서 입력상자 수정내용 모두 입력하고,
+  등록버튼 클릭 서버로 REST API 이용 전송
+
+# 전송완료 => 목록으로 이동(네비게이트)

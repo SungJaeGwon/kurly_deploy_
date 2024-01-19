@@ -1,0 +1,20 @@
+10_주소검색API_카카오주소검색_API 웹개발
+컴포넌트이름
+AddressSearchComponent.jsx
+AddressSearch.scss
+
+PostcodeComponent.jsx
+PostcodeComponent.scss
+
+
+너비 530PX
+높이 469 + 창제목 31 + 아래공간 100 = 600
+
+주소검색 API 패키지 설치
+npm   i  react-daum-postcode
+
+윈도우 타이틀 
+너비 100%
+높이 31px
+아래테두리
+배경색 132 173 234

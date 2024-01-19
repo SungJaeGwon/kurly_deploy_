@@ -1,0 +1,35 @@
+자바_DTO_DAO_JSP_REST_API_구현
+
+유저(USER) /////////////////////////////////////////////////
+user > UserDAO.java
+user > UserDTO.java
+
+webapp > kurly> user > 유저회원가입액션.jsp         / user_signin_action.jsp
+webapp > kurly> user > 유저아이디중복확인액션.jsp   / user_id_check_action.jsp
+webapp > kurly> user > 유저이메일중복확인액션.jsp   / user_email_check_action.jsp
+
+작업할것.
+webapp > kurly> user > 유저아이디찾기액션.jsp       / user_id_search_action.jsp 이름, 휴대폰 =>  userId, userGaib
+webapp > kurly> user > 유저비밀번호찾기액션.jsp     / user_pw_search_action.jsp 아이디, 휴대폰 => 비밀번호 재설정
+webapp > kurly> user > 유전회원로그인액션.jsp       / user_login_action.jsp
+
+
+관리자(ADMIN) /////////////////////////////////////////////////////////////////////
+admin > AdminDAO.java
+admin > AdminDTO.java
+
+webapp > kurly> admin > 관리자회원가입액션.jsp      / admin_signin_action.jsp
+webapp > kurly> admin > 관리자아이디중복확인액션.jsp / admin_id_check_action.jsp
+webapp > kurly> admin > 관리자이메일중복확인액션.jsp / admin_email_check_action.jsp
+
+작업할것.
+webapp > kurly> user >  관리자아이디찾기액션.jsp     / admin_id_search_action.jsp 이름, 휴대폰 =>  userId, userGaib
+webapp > kurly> user >  관리자비밀번호찾기액션.jsp   / admin_pw_search_action.jsp 아이디, 휴대폰 => 비밀번호 재설정
+webapp > kurly> user >  관리자회원로그인액션.jsp     / admin_login_action.jsp
+
+
+
+
+
+
+

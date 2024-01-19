@@ -1,0 +1,349 @@
+#sub5 {
+  width: 100%;
+}
+#sub5 #signUp {
+  width: 100%;
+}
+#sub5 #signUp .container {
+  width: 100%;
+  max-width: 640px;
+  margin: 0 auto;
+}
+#sub5 #signUp .container .title {
+  width: 100%;
+  text-align: center;
+  border-bottom: 2px solid #333;
+}
+#sub5 #signUp .container .title .title-text {
+  width: 100%;
+  font-size: 28px;
+  font-weight: 600;
+  color: #333;
+  padding: 60px 0;
+}
+#sub5 #signUp .container .title .sub-title {
+  width: 100%;
+  padding: 0 0 10px 0;
+}
+#sub5 #signUp .container .title .sub-title h3 {
+  width: 100%;
+  text-align: right;
+}
+#sub5 #signUp .container .title .sub-title h3 i {
+  font-size: 12px;
+  color: #ee6a7b;
+}
+#sub5 #signUp .container .title .sub-title h3 span {
+  font-size: 12px;
+  color: #888;
+}
+#sub5 #signUp .container .content {
+  width: 100%;
+}
+#sub5 #signUp .container .content form {
+  width: 100%;
+}
+#sub5 #signUp .container .content form ul.signup-form {
+  width: 100%;
+  padding: 0 0 15px 0;
+}
+#sub5 #signUp .container .content form ul.signup-form li.list {
+  width: 100%;
+  padding: 10px 20px;
+}
+#sub5 #signUp .container .content form ul.signup-form li.list .list-box {
+  width: 100%;
+  padding: 0 130px 0 139px;
+  position: relative;
+}
+#sub5 #signUp .container .content form ul.signup-form li.list .list-box .left-box {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 139px;
+  height: 46px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+#sub5 #signUp .container .content form ul.signup-form li.list .list-box .left-box label span {
+  color: #333;
+  font-weight: 500;
+  font-size: 14px;
+}
+#sub5 #signUp .container .content form ul.signup-form li.list .list-box .left-box label i {
+  color: #ee6a7b;
+  font-size: 12px;
+}
+#sub5 #signUp .container .content form ul.signup-form li.list .list-box .input-box {
+  width: 100%;
+  height: 46px;
+}
+#sub5 #signUp .container .content form ul.signup-form li.list .list-box .input-box input[type=password],
+#sub5 #signUp .container .content form ul.signup-form li.list .list-box .input-box input[type=text] {
+  width: 100%;
+  height: 100%;
+  border: 1px solid #ccc;
+  color: #333;
+  font-size: 16px;
+  border-radius: 3px;
+  padding: 0 15px;
+  outline-offset: -1px;
+  outline: 1px solid transparent;
+  transition: all 0.3s;
+}
+#sub5 #signUp .container .content form ul.signup-form li.list .list-box .input-box input[type=password]:focus,
+#sub5 #signUp .container .content form ul.signup-form li.list .list-box .input-box input[type=text]:focus {
+  outline-color: #333;
+}
+#sub5 #signUp .container .content form ul.signup-form li.list .list-box .input-box input[type=password]::-moz-placeholder, #sub5 #signUp .container .content form ul.signup-form li.list .list-box .input-box input[type=text]::-moz-placeholder {
+  color: #999;
+}
+#sub5 #signUp .container .content form ul.signup-form li.list .list-box .input-box input[type=password]::placeholder,
+#sub5 #signUp .container .content form ul.signup-form li.list .list-box .input-box input[type=text]::placeholder {
+  color: #999;
+}
+#sub5 #signUp .container .content form ul.signup-form li.list .list-box .input-box input[type=radio] {
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  width: 22px;
+  height: 22px;
+  border: 1px solid #ccc;
+  border-radius: 50%;
+}
+#sub5 #signUp .container .content form ul.signup-form li.list .list-box .input-box input[type=radio]:checked {
+  border: 6px solid #5f0080;
+}
+#sub5 #signUp .container .content form ul.signup-form li.list .list-box .right-box {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 130px;
+  height: 46px;
+  padding: 0 0 0 10px;
+}
+#sub5 #signUp .container .content form ul.signup-form li.list .list-box .right-box button {
+  width: 100%;
+  height: 100%;
+  background: #fff;
+  border: 1px solid #5f0080;
+  color: #5f0080;
+  font-weight: 500;
+  font-size: 14px;
+  border-radius: 3px;
+  cursor: pointer;
+}
+#sub5 #signUp .container .content form ul.signup-form li.list .list-box .right-box button.hp-btn.off {
+  border: 1px solid #ddd;
+  color: #ddd;
+}
+#sub5 #signUp .container .content form ul.signup-form li.list .list-box .guid-text {
+  font-size: 0;
+  color: #f03f40;
+  padding: 0;
+  line-height: 0;
+}
+#sub5 #signUp .container .content form ul.signup-form li.list .list-box .guid-text.on {
+  font-size: 13px;
+  padding: 10px 0;
+  line-height: 140%;
+}
+#sub5 #signUp .container .content form ul.signup-form li.list .list-box .guid-text.show {
+  font-size: 12px;
+  color: #666;
+  padding: 0;
+  line-height: 140%;
+}
+#sub5 #signUp .container .content form ul.signup-form li.list.hp2 .list-box .input-box {
+  position: relative;
+}
+#sub5 #signUp .container .content form ul.signup-form li.list.hp2 .list-box .input-box .userHpAuthen {
+  position: relative;
+  z-index: 1;
+}
+#sub5 #signUp .container .content form ul.signup-form li.list.hp2 .list-box .input-box .time-box {
+  position: absolute;
+  right: 15px;
+  top: 14px;
+  z-index: 1;
+}
+#sub5 #signUp .container .content form ul.signup-form li.list.hp2 .list-box .input-box .time-box em {
+  font-size: 14px;
+  color: #f03f40;
+}
+#sub5 #signUp .container .content form ul.signup-form li.list.address1 .list-box .input-box .address-search-btn {
+  width: 100%;
+  height: 100%;
+  background: #fff;
+  border: 1px solid #5f0080;
+  color: #5f0080;
+  font-weight: 500;
+  font-size: 14px;
+  border-radius: 3px;
+  cursor: pointer;
+}
+#sub5 #signUp .container .content form ul.signup-form li.list.address3 .list-box .guid-text {
+  font-size: 13px;
+  padding: 0 0 10px 0;
+}
+#sub5 #signUp .container .content form ul.signup-form li.list.address3 .list-box .guid-text strong {
+  display: block;
+  color: #5f0080;
+  padding: 0 0 10px 0;
+}
+#sub5 #signUp .container .content form ul.signup-form li.list.radio .list-box .input-box {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+#sub5 #signUp .container .content form ul.signup-form li.list.radio .list-box .input-box label span {
+  font-size: 16px;
+  color: #333;
+  margin: 0 0 0 10px;
+}
+#sub5 #signUp .container .content form ul.signup-form li.list.birth .list-box .input-box ul {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  height: 100%;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+}
+#sub5 #signUp .container .content form ul.signup-form li.list.birth .list-box .input-box ul li {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#sub5 #signUp .container .content form ul.signup-form li.list.birth .list-box .input-box ul li:nth-child(odd) {
+  width: 30%;
+}
+#sub5 #signUp .container .content form ul.signup-form li.list.birth .list-box .input-box ul li:nth-child(even) {
+  width: 5%;
+}
+#sub5 #signUp .container .content form ul.signup-form li.list.birth .list-box .input-box ul li input {
+  text-align: center;
+  border: 0;
+  width: 100%;
+  height: 100%;
+  outline: 0;
+}
+#sub5 #signUp .container .content form ul.signup-form li.list.birth .list-box .input-box ul li input:focus {
+  outline: 0;
+}
+#sub5 #signUp .container .content form ul.signup-form li.list.birth .list-box .input-box ul li i {
+  color: #ccc;
+}
+#sub5 #signUp .container .content form ul.signup-form li.list.chooga .list-box .guid-text {
+  font-size: 13px;
+  padding: 10px 0;
+}
+#sub5 #signUp .container .content form ul.signup-form li.list.hr .list-box {
+  padding: 0;
+}
+#sub5 #signUp .container .content form ul.signup-form li.list.hr .list-box hr {
+  width: 100%;
+  border: 0;
+  border-top: 1px solid #333;
+}
+#sub5 #signUp .container .content form ul.signup-form li.list.servie {
+  padding-top: 7px;
+  padding-bottom: 7px;
+}
+#sub5 #signUp .container .content form ul.signup-form li.list.servie .list-box {
+  padding-right: 0;
+}
+#sub5 #signUp .container .content form ul.signup-form li.list.servie .list-box .left-box {
+  height: 22px;
+}
+#sub5 #signUp .container .content form ul.signup-form li.list.servie .list-box .input-box {
+  display: flex;
+  align-items: center;
+  height: 22px;
+}
+#sub5 #signUp .container .content form ul.signup-form li.list.servie .list-box .input-box label input {
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  border: 1px solid #ccc;
+  background: url(../../../../public/images/sub/sub5/icon_check_off.svg) no-repeat 50% 50%;
+}
+#sub5 #signUp .container .content form ul.signup-form li.list.servie .list-box .input-box label input:checked {
+  background-image: url(../../../../public/images/sub/sub5/icon_check_on.svg);
+}
+#sub5 #signUp .container .content form ul.signup-form li.list.servie .list-box .input-box label span {
+  margin: 0 0 0 10px;
+  font-size: 14px;
+  color: #333;
+}
+#sub5 #signUp .container .content form ul.signup-form li.list.servie .list-box .input-box em {
+  font-size: 14px;
+  color: #999;
+  margin: 0 0 0 5px;
+}
+#sub5 #signUp .container .content form ul.signup-form li.list.servie .list-box button.service-view {
+  border: 0;
+  background: #fff;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+#sub5 #signUp .container .content form ul.signup-form li.list.servie .list-box button.service-view span {
+  color: #5f0080;
+  font-size: 14px;
+  margin: 0 4px 0 0;
+  font-weight: 500;
+}
+#sub5 #signUp .container .content form ul.signup-form li.list.servie .list-box button.service-view img {
+  width: 6px;
+  height: 9px;
+}
+#sub5 #signUp .container .content form ul.signup-form li.list.servie .list-box .guid-text {
+  margin: 0 0 0 32px;
+  padding: 0;
+}
+#sub5 #signUp .container .content form ul.signup-form li.list.servie1 .list-box .left-box {
+  height: 30px;
+}
+#sub5 #signUp .container .content form ul.signup-form li.list.servie1 .list-box .input-box {
+  height: 30px;
+}
+#sub5 #signUp .container .content form ul.signup-form li.list.servie1 .list-box .input-box label span {
+  margin: 0 0 0 10px;
+  font-size: 18px;
+  font-weight: 500;
+  color: #333;
+}
+#sub5 #signUp .container .content form ul.signup-form li.list.servie5 .list-box .input-box {
+  padding-left: 32px;
+}
+#sub5 #signUp .container .content form ul.signup-form li.list.servie5 .list-box .input-box label:nth-child(2) {
+  margin-left: 50px;
+}
+#sub5 #signUp .container .content form ul.signup-form li.list.servie5 .list-box .guid-text {
+  color: #5f0080;
+  margin: 10px 0 0 64px;
+  padding-left: 16px;
+  background: url(../../../../public/images/sub/sub5/icon_dot.svg) no-repeat 0 50%;
+}
+#sub5 #signUp .container .content form .button-box {
+  width: 100%;
+  text-align: center;
+  padding: 50px 0 100px 0;
+  border-top: 1px solid #eee;
+}
+#sub5 #signUp .container .content form .button-box button {
+  width: 220px;
+  height: 56px;
+  background: #5f0080;
+  border: 1px solid #5f0080;
+  color: #fff;
+  font-weight: 500;
+  font-size: 16px;
+  border-radius: 3px;
+  cursor: pointer;
+}

@@ -1,0 +1,70 @@
+HTML 특수문자 게시판입력 버그수정
+
+예]
+
+$str = `<em>'사우디'</em> "오일머니"에 막힌 "엑스포"의 꿈... 고개 떨군 한국 대표단`;
+$str = `&lt;em&gt;&apos;사우디&apos;&lt;/em&gt; &quot;오일머니&quot;에 막힌 &quot;엑스포&quot;의 꿈... 고개 떨군 한국 대표단`;
+
+인코드
+///////////////////////////////////////////////////////////////////////////////////////////
+# htmlspecialchars($str, ENT_QUOTES) 함수 사용 특수문자를 엔티티코드로 변환
+# htmlspecialchars($_POST['wSubject'], ENT_QUOTES) 함수 사용 특수문자를 엔티티코드로 변환
+# htmlspecialchars($_POST['wContents'], ENT_QUOTES) 함수 사용 특수문자를 엔티티코드로 변환
+///////////////////////////////////////////////////////////////////////////////////////////
+
+
+
+디코드
+///////////////////////////////////////////////////////////////////////////////////////////
+# htmlspecialchars_decode($str, ENT_QUOTES) 함수 사용 특수문자를 엔티티코드로 변환
+# htmlspecialchars_decode($_POST['wSubject'], ENT_QUOTES) 함수 사용 특수문자를 엔티티코드로 변환
+# htmlspecialchars_decode($_POST['wContents'], ENT_QUOTES) 함수 사용 특수문자를 엔티티코드로 변환
+///////////////////////////////////////////////////////////////////////////////////////////
+
+
+
+
+
+
+
+///////////////////////////////////////////////////////////////////////////////////////////
+// str_replace()함수 사용 특수문자를 엔티티코드로 변환 ///////////////////////////////////////
+///////////////////////////////////////////////////////////////////////////////////////////
+
+1. ' 홑따옴표(어퍼스트로프) => &apos; 엔티티코드
+인코드 => 저장 INSERT
+$wSubject  = str_replace("'", "&apos;", "입력문자문열" );
+$wContents = str_replace("'", "&apos;", "입력문자문열" );
+
+$wSubject  = str_replace("'", "&apos;", $_POST['wSubject'] );
+$wContents = str_replace("'", "&apos;", $_POST['wContents'] );
+
+디코드 => 가져오기 SELECT
+$wSubject  = str_replace("&apos;", "'", $row['wSubject'] );
+$wContents = str_replace("&apos;", "'", $row['wContents']);
+
+2. " 겹따옴표(쿼테이션마크) => &quot; 엔티티코드
+$wSubject  = str_replace("\"", "&quot;", $wSubject );
+$wContents = str_replace("\"", "&quot;", $wContents );
+
+3. < 작다 (레스댄) => &lt; 엔티티코드
+$wSubject  = str_replace("<", "&lt;", $wSubject );
+$wContents = str_replace("<", "&lt;", $wContents );
+
+4. > 크다 (그레이트댄) => &gt; 엔티티코드
+$wSubject  = str_replace(">", "&gt;", $wSubject );
+$wContents = str_replace(">", "&gt;", $wContents );
+
+
+
+
+
+////////////////////////////////////////////////////////////
+5. 줄바꿈 새로운줄 리턴(\r) & 뉴라인(\n) => <br>
+$wSubject  = str_replace("\r\n", "<br>", $wSubject );
+$wContents = str_replace("\r\n", "<br>", $wContents );
+
+
+
+
+

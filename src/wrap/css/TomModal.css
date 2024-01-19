@@ -1,0 +1,48 @@
+#topModal {
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+  width: 100%;
+  height: 42px;
+  background: #5f0080;
+}
+#topModal .container {
+  width: 100%;
+  max-width: 1050px;
+  height: 100%;
+  margin: 0 auto;
+}
+#topModal .container .content {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+#topModal .container .content a {
+  z-index: 1;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 14px;
+  color: #fff;
+}
+#topModal .container .content a em {
+  font-weight: 400;
+}
+#topModal .container .content a strong {
+  font-weight: 600;
+  margin: 0 5px;
+}
+#topModal .container .content button {
+  z-index: 2;
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 42px;
+  height: 100%;
+  background: transparent url(../../../public/images/intro/icon_top_mdal_close.svg) no-repeat 50% 50%;
+  border: 0;
+  cursor: pointer;
+}

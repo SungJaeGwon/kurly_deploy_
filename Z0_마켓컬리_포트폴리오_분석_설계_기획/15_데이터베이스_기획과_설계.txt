@@ -1,0 +1,97 @@
+15_데이터베이스_기획과_설계
+
+웹호스팅위치
+http://gksmf519.dothome.co.kr/kurly_green/kurly_singnUp.php
+
+테이블만들기
+http://gksmf519.dothome.co.kr/kurly_green/kurly_create_table.php
+
+
+테이블에 저장테스트 하기
+http://gksmf519.dothome.co.kr/kurly_green/kurly_insert_test_table.php
+
+관리자페이지
+http://gksmf519.dothome.co.kr/myadmin
+
+gksmf519
+anstjswhd0105#
+
+테이블생성 /////////////////////////////////////
+kurly_create_table.php
+
+테이블입력 테스트 /////////////////////////////////////
+kurly_insert_test_table.php
+
+회원가입 axios 구현  /////////////////////////////////////
+kurly_insert.php
+
+
+아이디 중복확인(duplicate) /////////////////////////////////////
+kurly_id_duplicate_ok.php
+
+http://gksmf519.dothome.co.kr/kurly_green/kurly_id_duplicate_ok.php
+
+1
+사용 불가능한 아이디 입니다
+
+0
+사용 할 수 있는 아이디 입니다
+
+
+
+
+이메일 중복확인(duplicate) /////////////////////////////////////
+kurly_email_duplicate_ok.php
+
+http://gksmf519.dothome.co.kr/kurly_green/kurly_email_duplicate_ok.php
+1
+사용 불가능한 이메일 입니다
+
+0
+사용 할 수 있는 이메일 입니다
+
+
+
+
+아이디 확인  /////////////////////////////////////
+kurly_id_ok.php
+
+http://gksmf519.dothome.co.kr/kurly_green/kurly_id_ok.php
+
+1
+존재하는 아이디 입니다.
+친구초대 이벤트에 참여 가능해요.
+
+0
+존재하지 않는 아이디 입니다.
+
+
+
+
+필드 타입
+
+userId      문자열 16
+userPw      문자열 16
+userName    문자열 50
+userEmail   문자열 250
+userHp      문자열 13
+userAddress 문자열 250
+userGender  문자열 4
+userBirth   문자열 10
+userAddInput문자열 250
+userService 문자열 1000
+가입일자
+
+
+userId
+userPw
+userName
+userEmail
+userHp
+userAddress
+userGender
+userBirth
+userAddInput
+userService
+
+

@@ -1,0 +1,38 @@
+관리자(MyAdmin) 게시판_상품_페이지네이션  & 분석 & 기획 & 설계
+
+http://gksmf519.dothome.co.kr/myadmin
+gksmf519
+anstjswhd0105#
+
+
+[1] 프론트앤드
+    * 컴포넌트 구성
+    
+    
+[2] 백앤드 : 
+    
+    - 테스트 URL
+    http://gksmf519.dothome.co.kr/kurly_green/
+
+
+[3] 데이터베이스
+    - 관리자 자주하는 질문 테이블
+
+    ```MYSQL        
+
+
+    ```
+
+
+[4] REST API 
+    
+
+
+
+
+
+
+
+
+
+

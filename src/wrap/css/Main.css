@@ -1,0 +1,8 @@
+#main {
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+  position: relative;
+  z-index: 2;
+  padding: 0 0 100px 0;
+}

@@ -1,0 +1,40 @@
+#pagenation {
+    padding: 50px 0 120px 0;
+    width:100%;
+    display: flex;
+    justify-content: center;
+    .pagenation-box {
+        width: auto;
+        ul {              
+            display: flex;  
+            li {
+                button {
+                    width: 34px;
+                    height: 34px;                
+                    border: 1px solid #ccc;
+                    border-right: 0;
+                    background: #fff;
+                    font-size: 14px;
+                    cursor: pointer;
+                    transition: all 0.3s;
+                    text-transform: uppercase;
+                    &.btn-page {
+                        width: auto;
+                        padding: 0 10px;
+                    }
+                    &:hover{
+                        background: #f0f0f0;
+                    }
+                    img {
+                        width: auto;
+                    }
+                }
+                &:last-child {
+                    button {
+                        border-right: 1px solid #ccc;
+                    }
+                }
+            }
+        }
+    }
+}

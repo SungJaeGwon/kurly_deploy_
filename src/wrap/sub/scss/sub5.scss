@@ -1,0 +1,405 @@
+#sub5 {
+    width: 100%;
+    #signUp {
+        width: 100%;
+        .container {
+            width: 100%;
+            max-width: 640px;
+            margin: 0 auto;
+            .title {
+                width: 100%;               
+                text-align: center;
+                border-bottom: 2px solid #333;
+                .title-text {
+                    width: 100%;
+                    font-size: 28px;
+                    font-weight: 600;
+                    color: #333;
+                    padding: 60px 0;
+                }
+                .sub-title {
+                    width: 100%;
+                    padding: 0 0 10px 0;
+                    h3 {
+                        width: 100%;
+                        text-align: right;
+                        i {
+                            font-size: 12px;
+                            color: #ee6a7b;
+                        }
+                        span {
+                            font-size: 12px;
+                            color: #888;
+                        }
+                    }
+                }
+            }
+            .content {
+                width: 100%;
+                form {
+                    width: 100%;
+                    ul.signup-form { // ul
+                        width: 100%;
+                        padding: 0 0 15px 0;
+                        li.list { // li
+                            width: 100%;
+                            padding: 10px 20px;
+                            .list-box {
+                                width: 100%; // 600 좌측레이블박스 -139   우측버튼박스-130
+                                padding: 0 130px 0 139px;                                
+                                position: relative;
+                                .left-box { // label
+                                    position: absolute;
+                                    top:0;
+                                    left:0;
+                                    width:139px;
+                                    height: 46px;
+                                    display: flex;
+                                    align-items: center;
+                                    justify-content: flex-start;
+                                    label {
+                                        span {
+                                            color:#333;
+                                            font-weight: 500;
+                                            font-size: 14px;                                          
+                                        }
+                                        i {
+                                            color:#ee6a7b;
+                                            font-size: 12px;
+                                        }
+                                    }
+                                }
+
+                                // 아이디, 비밀번호, 이름, 이메일
+                                .input-box { // input
+                                    width: 100%;
+                                    height: 46px;
+                                    input[type='password'] ,
+                                    input[type='text'] {
+                                        width: 100%;
+                                        height: 100%;
+                                        border: 1px solid #ccc;  
+                                        color:#333;
+                                        font-size: 16px;
+                                        border-radius: 3px;
+                                        padding: 0 15px;
+                                        outline-offset: -1px;
+                                        outline: 1px solid transparent;
+                                        transition: all 0.3s;
+                                        &:focus {
+                                            outline-color: #333; 
+                                        }
+                                        &::placeholder {
+                                            color:#999;
+                                        }
+                                    }
+                                    input[type='radio'] {
+                                        appearance: none; // 라디오 체크박스 디자인 사용안함 사용자 디자인하는경우
+                                        width: 22px;
+                                        height: 22px;
+                                        border: 1px solid #ccc;  
+                                        border-radius: 50%;
+                                        &:checked {
+                                            border: 6px solid #5f0080;
+                                        }
+                                    }
+                                }
+                                .right-box { // button
+                                    position: absolute;
+                                    top:0;
+                                    right:0;
+                                    width:130px;
+                                    height: 46px;
+                                    padding: 0 0 0 10px;
+                                    button {
+                                        width: 100%;
+                                        height: 100%;
+                                        background: #fff;
+                                        border: 1px solid #5f0080;
+                                        color:#5f0080;
+                                        font-weight: 500;
+                                        font-size: 14px;
+                                        border-radius: 3px;
+                                        cursor: pointer;
+                                        &.hp-btn{
+                                            &.off{
+                                                border: 1px solid #ddd;
+                                                color:#ddd;
+                                            }
+                                        }
+                                    }
+                                }
+                                .guid-text {
+                                    font-size: 0;
+                                    color: #f03f40;
+                                    padding: 0;
+                                    line-height: 0;
+                                    &.on {
+                                        font-size: 13px;  
+                                        padding: 5px 0;
+                                        line-height: 140%;
+                                    }
+                                    &.show {
+                                        font-size: 12px;
+                                        color:#666;
+                                        padding: 0;   
+                                        line-height: 140%;                             
+                                    }
+                                }
+                            }
+
+                            //  휴대폰
+                            &.hp2{
+                                .list-box {
+                                    .input-box {
+                                        position: relative;
+                                        .userHpAuthen {
+                                            position: relative;
+                                            z-index: 1;
+                                        }
+                                        .time-box {
+                                            position: absolute;
+                                            right:15px;
+                                            top:14px;                                                
+                                            z-index: 1;
+                                            em {
+                                                font-size: 14px;
+                                                color:#f03f40;
+                                            }
+                                        }
+                                    }
+                                }
+                            
+                            }
+
+                            // 주소검색
+                            &.address1{
+                                .list-box {
+                                    .input-box {
+                                        .address-search-btn {
+                                            width: 100%;
+                                            height: 100%;
+                                            background: #fff;
+                                            border: 1px solid #5f0080;
+                                            color:#5f0080;
+                                            font-weight: 500;
+                                            font-size: 14px;
+                                            border-radius: 3px;
+                                            cursor: pointer;
+                                        }
+                                    }
+                                }
+                            }
+                            &.address3{
+                                .list-box {
+                                    .guid-text {
+                                        font-size: 13px;  
+                                        padding: 0 0 10px 0;
+                                        strong {
+                                            display: block;
+                                            color: #5f0080;
+                                            padding: 0 0 10px 0;
+                                        }
+                                    }
+                                }
+                            }
+
+                            // 성별
+                            &.radio { // 성별, 추가입력사항 공용사용
+                                .list-box {
+                                    .input-box {
+                                        display: flex;
+                                        align-items: center;
+                                        justify-content: space-between;
+                                        label {
+                                            span {
+                                                font-size: 16px;color: #333;
+                                                margin:  0 0 0 10px;
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+
+                            // 생년월일
+                            &.birth {
+                                .list-box {
+                                    .input-box {
+                                      ul {
+                                        display: flex;
+                                        justify-content: space-between;
+                                        width: 100%;
+                                        height: 100%;
+                                        border: 1px solid #ccc;
+                                        border-radius: 3px;
+                                        li {
+                                            height: 100%;
+                                            display: flex;
+                                            align-items: center;
+                                            justify-content: center;
+                                            &:nth-child(odd){width:30%;}
+                                            &:nth-child(even){width:5%;}
+                                            input {
+                                                text-align: center;
+                                                border:0;
+                                                width: 100%;
+                                                height: 100%;
+                                                outline: 0;
+                                                &:focus {
+                                                    outline: 0;
+                                                }
+                                            }
+                                            i {
+                                                color:#ccc;
+                                            }
+                                        }
+                                      }
+                                    }
+                                }
+                            }
+
+                            // 추가입력 사항
+                            &.chooga {
+                                .list-box {
+                                    .guid-text {
+                                        font-size: 13px;  
+                                        padding: 10px 0; 
+                                    }
+                                }
+                            }
+
+                            // 가로줄
+                            &.hr {
+                                .list-box {
+                                    padding: 0;
+                                    hr {
+                                        width: 100%;
+                                        border:0;
+                                        border-top: 1px solid #333;
+                                    }
+                                }
+                            }
+
+                            // 이용약관동의
+                            &.servie {
+                                padding-top: 7px;
+                                padding-bottom: 7px;
+                                .list-box {
+                                    padding-right:0;                                    
+                                    .left-box {
+                                        height: 22px; 
+                                    }
+                                    .input-box {
+                                        display: flex;
+                                        align-items: center;
+                                        height: 22px;                                        
+                                        label{
+                                            input {
+                                                appearance: none;
+                                                width: 22px;
+                                                height: 22px;
+                                                border-radius: 50%;
+                                                border: 1px solid #ccc;
+                                                background: url(../../../../public/images/sub/sub5/icon_check_off.svg) no-repeat 50% 50%;
+                                                &:checked {
+                                                    background-image: url(../../../../public/images/sub/sub5/icon_check_on.svg);
+                                                }
+                                            }
+                                            span {
+                                                margin: 0 0 0 10px;
+                                                font-size: 14px;
+                                                color:#333;
+                                            }
+                                        }
+                                        em {
+                                            font-size: 14px;
+                                            color:#999;
+                                            margin: 0 0 0 5px;
+                                        }
+                                    }
+                                    // 약관보기
+                                    button.service-view {
+                                        border:0;
+                                        background: #fff;
+                                        position: absolute;
+                                        right:0;
+                                        top:0;                                       
+                                        span {
+                                            color:#5f0080;
+                                            font-size: 14px;
+                                            margin: 0 4px 0 0;
+                                            font-weight: 500;
+                                        }
+                                        img {
+                                            width: 6px;
+                                            height: 9px;
+                                        }
+                                    }
+
+
+                                    // 가이드 텍스트
+                                   .guid-text {
+                                        margin: 0 0 0 32px;
+                                        padding: 0;
+                                    }
+                                }
+                            }                            
+                            &.servie1 {
+                                .list-box {
+                                    .left-box {
+                                        height: 30px; 
+                                    }
+                                    .input-box {
+                                        height: 30px;
+                                        label{
+                                            span {
+                                                margin: 0 0 0 10px;
+                                                font-size: 18px;
+                                                font-weight: 500;
+                                                color:#333;
+                                            }
+                                        }
+                                   }
+                                }
+                            }
+                            &.servie5 {
+                                .list-box {
+                                    .input-box {  
+                                        padding-left: 32px;                                      
+                                        label:nth-child(2){
+                                            margin-left: 50px;
+                                        }
+                                   }
+                                   .guid-text {
+                                        color: #5f0080;
+                                        margin: 10px 0 0 64px;
+                                        padding-left: 16px;
+                                        background: url(../../../../public/images/sub/sub5/icon_dot.svg) no-repeat 0 50%;
+                                   }
+                                }
+                            }
+
+                        }
+                    }
+                    .button-box {
+                        width: 100%;
+                        text-align: center;
+                        padding: 50px 0 100px 0;
+                        border-top: 1px solid #eee;
+                        button {
+                            width: 220px;
+                            height: 56px;
+                            background: #5f0080;
+                            border: 1px solid #5f0080;
+                            color:#fff;
+                            font-weight: 500;
+                            font-size: 16px;
+                            border-radius: 3px;
+                            cursor: pointer;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

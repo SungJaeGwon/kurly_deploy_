@@ -1,0 +1,123 @@
+관리자(MyAdmin) 로그인 구현 & 분석 & 기획 & 설계
+
+http://gksmf519.dothome.co.kr/myadmin
+gksmf519
+anstjswhd0105#
+
+[1] 프론트앤드
+    * 컴포넌트 구성
+    - 관리자 로그인폼 컴포넌트 : Sub7AdminSigninComponent.jsx  / pathname: sub7AdminSign
+    - 관리자 회원가입 폼 컴포넌트 : Sub7AdminSignupComponent.jsx  / pathname: sub7AdminSignup
+    
+    - 아이디 찾기  컴포넌트 : Sub7AdminIdSearchComponent.jsx  / pathname: sub7AdminIdSearch
+    - 아이디 찾기 결과 컴포넌트 : Sub7AdminIdSearchResultComponent.jsx  / pathname: sub7AdminIdSearchResult
+
+    - 비밀번호 찾기  컴포넌트 : Sub7AdminPwSearchComponent.jsx  / pathname:  sub7AdminPwSearch
+    - 비밀번호 재설정 컴포넌트 : Sub7AdminPwResetComponent.jsx  / pathname:  sub7AdminPwReset
+    
+[2] 백앤드 : 
+    - 관리자 로그인 폼 서버사이드파일 : green_kurly_admin_sigin.php
+    - 관리자 회원가입 폼 서버사이드파일 : green_kurly_admin_siginup.php
+
+    - 관리자 아이디 찾기 폼 서버사이드파일 : green_kurly_admin_id_search.php
+    
+    - 관리자 비밀번호 찾기 폼 서버사이드파일 : green_kurly_admin_pw_search.php
+    - 관리자 비밀번호 재설정 폼 서버사이드파일 : green_kurly_admin_pw_update.php
+
+    ## 아이디 중복확인
+    - 회원가입 폼 아이디 중복확인 서버사이드파일 : green_kurly_admin_id_duplicate_ok.php
+    
+    ## 이메일 중복확인
+    - 회원가입 폼 비밀번호 중복확인 서버사이드파일 : green_kurly_admin_email_duplicate_ok.php
+
+    - 테스트 URL
+    http://gksmf519.dothome.co.kr/kurly_green/green_kurly_admin_sigin.php
+
+[3] 데이터베이스
+    - 관리자 회원 테이블
+
+    ```MYSQL        
+            CREATE TABLE `green_kurly_admin_table` (
+            `idx` int NOT NULL,
+            `adminId` varchar(16) NOT NULL,
+            `adminPw` varchar(16) NOT NULL,
+            `adminName` varchar(50) NOT NULL,
+            `adminEmail` varchar(250) CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci DEFAULT NULL,
+            `adminHp` varchar(13) CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci DEFAULT NULL,
+            `adminAddress` varchar(500) CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci DEFAULT NULL,
+            `adminGaib` timestamp NULL DEFAULT CURRENT_TIMESTAMP
+            ) ENGINE=MyISAM DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+    ```
+
+    - 관리자 게시판 테이블
+
+    ```MYSQL        
+            CREATE TABLE `green_kurly_notice_table` (
+            `idx` int NOT NULL,
+            `wType` varchar(16) CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci DEFAULT NULL,
+            `wSubject` varchar(250) NOT NULL,
+            `wContent` text NOT NULL,
+            `wName` varchar(30) CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci DEFAULT NULL,
+            `wId` varchar(16) CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci DEFAULT NULL,
+            `wHit` int DEFAULT NULL,
+            `wDate` timestamp NULL DEFAULT CURRENT_TIMESTAMP
+            ) ENGINE=MyISAM DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+
+    ```
+    - 회원 테이블
+
+    ```MYSQL  
+            CREATE TABLE `green_kurly_table` (
+            `userId` varchar(16) NOT NULL,
+            `userPw` varchar(16) NOT NULL,
+            `userName` varchar(50) NOT NULL,
+            `userEmail` varchar(250) NOT NULL,
+            `userHp` varchar(13) NOT NULL,
+            `userAddress` varchar(250) NOT NULL,
+            `userGender` varchar(4) DEFAULT NULL,
+            `userBirth` varchar(10) DEFAULT NULL,
+            `userAddInput` varchar(250) DEFAULT NULL,
+            `userService` varchar(1000) NOT NULL,
+            `userGaib` timestamp NULL DEFAULT CURRENT_TIMESTAMP
+            ) ENGINE=MyISAM DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+
+    ```
+
+    - 상품 테이블
+
+gksmf5196
+gksmf519123
+정지연
+
+[4] REST API 
+    - 1. 관리자 로그인 폼 구현 : Sub7AdminSigninComponent.jsx
+      axios({
+        url:'http://gksmf519.dothome.co.kr/kurly_green/green_kurly_admin_sigin.php',
+        method: 'POST'
+      })    
+      
+
+
+    - 관리자 회원가입 폼 컴포넌트 : Sub7AdminSignupComponent.jsx  / pathname: sub7AdminSignup
+    - 아이디 찾기  컴포넌트 : Sub7AdminIdSearchComponent.jsx  / pathname: sub7AdminIdSearch
+    - 아이디 찾기 결과 컴포넌트 : Sub7AdminIdSearchResultComponent.jsx  / pathname: sub7AdminIdSearchResult
+    - 비밀번호 찾기  컴포넌트 : Sub7AdminPwSearchComponent.jsx  / pathname:  sub7AdminPwSearch
+    - 비밀번호 재설정 컴포넌트 : Sub7AdminPwResetComponent.jsx  / pathname:  sub7AdminPwReset
+    
+
+    - 관리자 로그인 폼 서버사이드파일 : green_kurly_admin_sigin.php
+    - 관리자 회원가입 폼 서버사이드파일 : green_kurly_admin_siginup.php
+    - 관리자 아이디 찾기 폼 서버사이드파일 : green_kurly_admin_id_search.php
+    - 관리자 비밀번호 찾기 폼 서버사이드파일 : green_kurly_admin_pw_search.php
+    - 관리자 비밀번호 재설정 폼 서버사이드파일 : green_kurly_admin_pw_update.php
+
+
+
+
+
+
+
+
+
+
+

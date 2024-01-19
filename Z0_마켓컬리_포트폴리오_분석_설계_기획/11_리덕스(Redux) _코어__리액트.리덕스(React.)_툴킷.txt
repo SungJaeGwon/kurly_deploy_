@@ -1,0 +1,74 @@
+리덕스(Redux) 코어 & 리액트.리덕스(React.Redux) & 미들웨어
+
+: 상태관리 전문 패키지
+: 애플리케이션의 상태와 로직을 
+  중앙 집중화하면 실행 취소/다시 실행 , 
+  상태 지속성 등과 같은 
+  강력한 기능이 가능해집니다.
+
+* 설치(install) 하기
+
+- 최신버전설치
+npm  i  redux;
+
+- 버전선택설치
+npm  i  redux@4.1.2;
+
+- 패키지 1개씩 설치하는 방법
+npm  i  redux@4.1.2;
+npm  i  react-redux;
+
+- 패키지 2개 설치하는 방법
+npm  i  redux@4.1.2  react-redux;
+
+
+
+// 1. 리액트-리덕스 & 리덕스 임포트하기
+// 2. 상태객체(변수) 만들기(kurlyState)
+// 3. 리듀서 만들기
+// 4. 스토어 만들기
+// 5. 프로바이더로 감싸기 & 스토어 넣기
+
+리덕스 실전구현 상태관리
+
+- 주소관리
+- 메인모달
+- 탑모달
+- 컨펌모달
+
+
+
+리덕스 미들웨어 로거 logger 설치하기
+npm  i  redux-logger
+
+if (){} 조건문을
+switch() case 타임: return {}
+
+ switch(action.type){
+        case 'setIsAddress':
+            return { // break 문과 같은 결과
+                ...state,
+                주소: {
+                    ...state.주소,
+                    isAddress: action.value 
+                }
+            }
+        default :
+            return state;  // 내보내기
+  }
+
+
+  // 다음은 type 별 모듈화 작업 미들웨어 학습
+
+리듀서 파일 설계 기획
+
+isAddress.js
+address.js
+isTopModal.js
+isMainModal.js
+isConfirmModal.js
+viewProduct.js
+
+viewProductIsFlag.js
+quickMenuViewProduct.js
+    
